@@ -1,15 +1,6 @@
 <?php
-/**
- * Top Menu Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
-$_lang['edit_menu'] = 'Действия';
-$_lang['edit_menu_desc'] = 'Управление действиями и структурой верхнего меню.';
-$_lang['eventlog_viewer'] = 'Журнал ошибок';
-$_lang['eventlog_viewer_desc'] = 'Просмотр MODx error.log.';
+$_lang['about'] = 'О проекте';
+$_lang['about_desc'] = 'Подробная информация о MODx Revolution.';
 $_lang['access_permissions'] = 'Права доступа';
 $_lang['access_permissions_desc'] = 'Управление доступом групп пользователей к ресурсам и контекстам.';
 $_lang['api_docs'] = 'Документация по API';
@@ -19,6 +10,10 @@ $_lang['content_types'] = 'Типы содержимого';
 $_lang['content_types_desc'] = 'Вы можете добавить новые типы содержимого для ресурсов,например такие как  .html, .js, и т.д..';
 $_lang['contexts'] = 'Контексты';
 $_lang['contexts_desc'] = 'Управление контекстами сайта и их настройками.';
+$_lang['edit_menu'] = 'Действия';
+$_lang['edit_menu_desc'] = 'Управление действиями и структурой верхнего меню.';
+$_lang['eventlog_viewer'] = 'Журнал ошибок';
+$_lang['eventlog_viewer_desc'] = 'Просмотр MODx error.log.';
 $_lang['export_site'] = 'Экспорт в HTML';
 $_lang['export_site_desc'] = 'Экспорт существующего сайта в статические  HTML страницы.';
 $_lang['flush_access'] = 'Перезагрузить права доступа';
@@ -33,8 +28,6 @@ $_lang['form_customization'] = 'Настройка форм';
 $_lang['form_customization_desc'] = 'Настройка внешнего вида бэкенда.';
 $_lang['forums'] = 'Форум';
 $_lang['forums_desc'] = 'Перейти на официальный форум MODx.';
-$_lang['about'] = 'О проекте';
-$_lang['about_desc'] = 'Подробная информация о MODx Revolution.';
 $_lang['import_resources'] = 'Импорт ресурсов';
 $_lang['import_resources_desc'] = 'Пакетный импорт статических ресурсов.';
 $_lang['import_site'] = 'Импорт HTML';

@@ -1,11 +1,4 @@
 <?php
-/**
- * About Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['about_msg'] = 'MODx - это <a href="http://modxcms.com/what-is-modx.html" target="_blank">система для разработки и управления веб-сайтами</a>, распространяемая по лицензии <a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License v2</a> и по более поздним версиям этой лицензии.';
 $_lang['about_title'] = 'О MODx';
 $_lang['credits'] = 'Команда MODx';

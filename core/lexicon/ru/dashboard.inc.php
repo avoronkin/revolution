@@ -1,11 +1,4 @@
 <?php
-/**
-* Russian language strings for MODx Dashboard
-*
-* @package modx
-* @subpackage lexicon
-*/
-
 $_lang['active_users_none'] = 'Сейчас нет пользователей онлайн.';
 $_lang['add_user'] = 'Добавить пользователя';
 $_lang['create_resource'] = 'Создать ресурс';

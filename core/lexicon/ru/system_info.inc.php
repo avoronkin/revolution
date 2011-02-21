@@ -12,10 +12,12 @@ $_lang['database_table_droptablestatements'] = 'Добавить команды 
 $_lang['database_table_effectivesize'] = 'Реальный размер';
 $_lang['database_table_indexsize'] = 'Размер индекса';
 $_lang['database_table_overhead'] = 'Перерасход';
+$_lang['database_table_reserved'] = 'Reserved';
 $_lang['database_table_records'] = 'Записей';
 $_lang['database_table_tablename'] = 'Имя таблицы';
 $_lang['database_table_totalsize'] = 'Общий размер';
 $_lang['database_table_totals'] = 'Итого:';
+$_lang['database_table_unused'] = 'Unused';
 $_lang['database_type'] = 'Тип базы данных';
 $_lang['database_version'] = 'Версия базы данных';
 $_lang['extjs_version'] = 'Версия <a href="http://extjs.com/" target="_blank">ExtJS</a>';
@@ -36,8 +38,8 @@ $_lang['phpmailer_version'] = 'Версия <a href="http://sourceforge.net/proj
 $_lang['server'] = 'Сервер';
 $_lang['servertime'] = 'Серверное время';
 $_lang['serveroffset'] = 'Смещение серверного времени';
-$_lang['sysinfo_desc'] = 'Здесь Вы можете просмотреть основную информацию о системном окружении MODx.';
 $_lang['smarty_version'] = 'Версия <a href="http://smarty.net/" target="_blank">Smarty</a>';
+$_lang['sysinfo_desc'] = 'Здесь Вы можете просмотреть основную информацию о системном окружении MODx.';
 $_lang['view_sysinfo'] = 'Информация о системе';
 $_lang['table_prefix'] = 'Префикс таблицы';
 $_lang['truncate_table'] = 'Для очистки таблицы нажмите сюда';

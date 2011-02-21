@@ -1,11 +1,4 @@
 <?php
-/**
- * Content Type Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['binary'] = 'Двоичный';
 $_lang['binary_desc'] = 'Файл двоичный или text/ascii?';
 $_lang['content_type'] = 'Тип содержимого';

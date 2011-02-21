@@ -1,11 +1,4 @@
 <?php
-/**
- * Config Check Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['configcheck_admin'] = 'Пожалуйста свяжитесь с системным администратором и предупредите его об этом сообщении!';
 $_lang['configcheck_cache'] = 'невозможна запись в папку кэширования';
 $_lang['configcheck_cache_msg'] = 'MODx не в состоянии записывать данные в кэш-папку. Система будет работать нормально, но кэширования происходить не будет. Для решения проблемы разрешите запись в папку /_cache/ .';

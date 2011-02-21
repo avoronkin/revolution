@@ -1,11 +1,4 @@
 <?php
-/**
- * Action Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['action'] = 'Действие';
 $_lang['action_confirm_remove'] = 'Вы уверены, что хотите удалить это действие? Это может нарушить работу сайта.';
 $_lang['action_create'] = 'Создать действие';

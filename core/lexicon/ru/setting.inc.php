@@ -1,11 +1,4 @@
 <?php
-/**
- * Setting Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['area'] = 'Раздел';
 $_lang['area_authentication'] = 'Авторизация и безопасность';
 $_lang['area_caching'] = 'Кэширование';
@@ -24,7 +17,7 @@ $_lang['area_lexicon_string_msg'] = 'Введите ключ записи сло
 $_lang['area_site'] = 'Сайт';
 $_lang['area_system'] = 'Система и сервер';
 $_lang['areas'] = 'Разделы';
-$_lang['namespace']='Пространство имён';
+$_lang['namespace'] = 'Пространство имён';
 $_lang['namespace_filter'] = 'Отбор по пространству имён...';
 $_lang['search_by_key'] = 'Поиск по ключу...';
 $_lang['setting_create'] = 'Создать новый параметр';
@@ -91,12 +84,10 @@ $_lang['setting_cache_default_err'] = 'Кэшировать ресурсы по 
 $_lang['setting_cache_disabled'] = 'Отключить глобальное кэширование';
 $_lang['setting_cache_disabled_desc'] = 'Выберите «Да» для отключения всего механизма кэширования MODx';
 $_lang['setting_cache_disabled_err'] = 'Пожалуйста, укажите включено или нет кэширование';
-$_lang['setting_cache_json'] = 'Кэшировать JSON';
-$_lang['setting_cache_json_desc'] = 'Кэшировать данные передаваемые в формате JSON в административной части сайта.';
 $_lang['setting_cache_expires'] = 'Время жизни кэша';
 $_lang['setting_cache_expires_desc'] = 'Это значение (в секундах) устанавливает время жизни кэша.';
-$_lang['setting_cache_json_expires'] = 'Время жизни кэша данных получаемых в формате JSON';
-$_lang['setting_cache_json_expires_desc'] = 'Это значение (в секундах) устанавливает время жизни кэша для данных в формате JSON.';
+$_lang['setting_cache_format'] = 'Используемый формат кэша';
+$_lang['setting_cache_format_desc'] = '0 = PHP, 1 = JSON, 2 = serialize.';
 $_lang['setting_cache_handler'] = 'Класс обработчик системы кэширования';
 $_lang['setting_cache_handler_desc'] = 'The class name of the type handler to use for caching. If set to true, this will use server headers to cache the lexicon strings loaded into JavaScript for the manager interface.';
 $_lang['setting_cache_lang_js'] = 'Кэшировать  javascript файлы с записями словаря';
@@ -160,7 +151,6 @@ $_lang['setting_feed_modx_security'] = 'URL канала уведомлений 
 $_lang['setting_feed_modx_security_desc'] = 'Устанавливает URL RSS-канала для панели «Уведомления безопасности MODx».';
 $_lang['setting_feed_modx_security_enabled'] = 'Включён показ RSS-канала «Уведомления безопасности MODx»';
 $_lang['setting_feed_modx_security_enabled_desc'] = 'Если выбрано «Нет», MODx не будет показывать ленту «Уведомления безопасности MODx».';
-
 $_lang['setting_filemanager_path'] = 'Путь для диспетчера файлов';
 $_lang['setting_filemanager_path_desc'] = 'Сервер IIS зачастую не определяет свойство document_root, которое используется диспетчером файлов для определения мест, которые вам доступны. Если у вас возникли проблемы с использованием диспетчера файлов, убедитесь что этот путь указывает в корневую папку установки MODx.';
 $_lang['setting_filemanager_path_relative'] = 'Путь для диспетчера файлов относительный?';
@@ -169,13 +159,10 @@ $_lang['setting_filemanager_url'] = 'URL диспетчера файлов';
 $_lang['setting_filemanager_url_desc'] = 'Optional. Set this if you want to set an explicit URL to access the files in the MODx file manager from (useful if you have changed filemanager_path to a path outside the MODx webroot). Make sure this is the web-accessible URL of the filemanager_path setting value. If leave this empty, MODx will try to automatically calculate it.';
 $_lang['setting_filemanager_url_relative'] = 'URL диспетчера файлов относительный?';
 $_lang['setting_filemanager_url_relative_desc'] = 'If your filemanager_url setting is relative to the MODx base_url, then please set this setting to Yes. If your filemanager_url is outside the main webroot, set this to No.';
-
 $_lang['setting_forgot_login_email'] = 'Письмо восстановления пароля';
 $_lang['setting_forgot_login_email_desc'] = 'Шаблон для письма посылаемого когда пользователь забыл свой пароль или имя учётной записи.';
-
 $_lang['setting_forward_merge_excludes'] = 'sendForward Exclude Fields on Merge';
 $_lang['setting_forward_merge_excludes_desc'] = 'A SymLink merges non-empty field values over the values in the target Resource; using this comma-delimited list of excludes prevents specified fields from being overridden by the SymLink.';
-
 $_lang['setting_friendly_alias_lowercase_only'] = 'Только строчные символы в псевдонимах';
 $_lang['setting_friendly_alias_lowercase_only_desc'] = 'Определяет, следует ли разрешить только строчные буквы в псевдонимах ресурсов.';
 $_lang['setting_friendly_alias_max_length'] = 'Максимальная длина псевдонима';
@@ -194,23 +181,19 @@ $_lang['setting_friendly_alias_translit_class_path'] = 'Путь к классу
 $_lang['setting_friendly_alias_translit_class_path_desc'] = 'Местоположение модели пакета отвечающего за транслитерацию псевдонимов.';
 $_lang['setting_friendly_alias_trim_chars'] = 'Символы вырезаемые из псевдонима';
 $_lang['setting_friendly_alias_trim_chars_desc'] = 'Символы которые надо вырезать из окончания псевдонима.';
+$_lang['setting_friendly_alias_urls'] = 'Использовать псевдонимы в урлах:';
+$_lang['setting_friendly_alias_urls_desc'] = 'Если вы используете дружественные URL, а у ресурса есть псевдоним (alias), то всегда будет использован псевдоним. Если вы включите эту настройку, то суффикс который установлен в «Типы содержимого» также будет добавлен к псевдониму. Например, если идентификатор ресурса 1, синоним «introduction» и вы установили  в «Типы содержимого» суффикс «.html», то включив эту настройку Вы получите адрес «introduction.html». Если псевдоним не установлен, то MODx создаст ссылку «1.html».';
 $_lang['setting_friendly_alias_word_delimiter'] = 'Разделитель слов  в псевдонимах';
 $_lang['setting_friendly_alias_word_delimiter_desc'] = 'Символ который будет заменять пробелы между словами.';
 $_lang['setting_friendly_alias_word_delimiters'] = 'FURL Alias Word Delimiters';
 $_lang['setting_friendly_alias_word_delimiters_desc'] = 'Characters which represent word delimiters when processing friendly URL alias slugs. These characters will be converted and consolidated to the preferred FURL alias word delimiter.';
-
-$_lang['setting_friendly_alias_urls'] = 'Использовать псевдонимы в урлах:';
-$_lang['setting_friendly_alias_urls_desc'] = 'Если вы используете дружественные URL, а у ресурса есть псевдоним (alias), то всегда будет использован псевдоним. Если вы включите эту настройку, то суффикс который установлен в «Типы содержимого» также будет добавлен к псевдониму. Например, если идентификатор ресурса 1, синоним «introduction» и вы установили  в «Типы содержимого» суффикс «.html», то включив эту настройку Вы получите адрес «introduction.html». Если псевдоним не установлен, то MODx создаст ссылку «1.html».';
 $_lang['setting_friendly_urls'] = 'Использовать дружественные URL:';
 $_lang['setting_friendly_urls_desc'] = 'Эта настройка позволяет использовать в MODx дружественные URL. Обратите внимание, что это работает только на серверах Apache, и вам надо модифицировать файл .htaccess, чтобы этот механизм заработал. Для дополнительной информации смотрите пример файла .htaccess, поставляемого с MODx.';
 $_lang['setting_friendly_urls_err'] = 'Пожалуйста, укажите хотите ли вы использовать дружественные URL.';
-
 $_lang['setting_hidemenu_default'] = 'Не показывать в меню по умолчанию';
 $_lang['setting_hidemenu_default_desc'] = 'Выберите «Да», для того чтобы параметр «Не показывать в меню» был выбран по умолчанию, при создании новых ресурсов .';
-
-$_lang['setting_link_tag_scheme'] = 'Схема генерации URL';
-$_lang['setting_link_tag_scheme_desc'] = 'Схема генерации URL для тега [[~id]]. Возможные значения: <a href="http://api.modxcms.com/modx/modX.html#makeUrl">http://api.modxcms.com/modx/modX.html#makeUrl</a>';
-
+$_lang['setting_link_tag_scheme'] = 'URL Generation Scheme';
+$_lang['setting_link_tag_scheme_desc'] = 'URL generation scheme for tag [[~id]]. Available options: <a href="http://api.modxcms.com/modx/modX.html#makeUrl">http://api.modxcms.com/modx/modX.html#makeUrl</a>';
 $_lang['setting_mail_charset'] = 'Кодировка';
 $_lang['setting_mail_charset_desc'] = 'Кодировка (по умолчанию) для электронных писем';
 $_lang['setting_mail_encoding'] = 'Формат кодирования';
@@ -237,7 +220,6 @@ $_lang['setting_mail_smtp_timeout'] = 'SMTP время ожидания';
 $_lang['setting_mail_smtp_timeout_desc'] = 'Sets the SMTP server timeout in seconds. This function will not work in win32 servers.';
 $_lang['setting_mail_smtp_user'] = 'SMTP пользователь';
 $_lang['setting_mail_smtp_user_desc'] = 'The user to authenticate to SMTP against.';
-
 $_lang['setting_manager_direction'] = 'Направление текста в административной части';
 $_lang['setting_manager_direction_desc'] = 'Выберите направление в котором будет генерироваться текст в административной части (слева-направо или справа-налево).';
 $_lang['setting_manager_date_format'] = 'Формат даты в панели управления';
@@ -266,7 +248,6 @@ $_lang['setting_password_generated_length'] = 'Длина сгенерирова
 $_lang['setting_password_generated_length_desc'] = 'Длина сгенерированного пароля для пользователя.';
 $_lang['setting_password_min_length'] = 'Минимальная длина пароля';
 $_lang['setting_password_min_length_desc'] = 'Минимальная длина пароля для пользователя.';
-
 $_lang['setting_proxy_auth_type'] = 'Proxy тип авторизации';
 $_lang['setting_proxy_auth_type_desc'] = 'Supports either BASIC or NTLM.';
 $_lang['setting_proxy_host'] = 'Proxy Host';
@@ -277,7 +258,6 @@ $_lang['setting_proxy_port'] = 'Proxy порт';
 $_lang['setting_proxy_port_desc'] = 'Порт прокси сервера.';
 $_lang['setting_proxy_username'] = 'Пользователь прокси сервера';
 $_lang['setting_proxy_username_desc'] = 'Имя пользователя для авторизации на проокси сервере.';
-
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb Allow src Above Document Root';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Indicates if the src path is allowed outside the document root. This is useful for multi-context deployments with multiple virtual hosts.';
 $_lang['setting_phpthumb_cache_maxage'] = 'phpThumb максимальное время жизни кэша';
@@ -292,48 +272,34 @@ $_lang['setting_phpthumb_error_bgcolor'] = 'phpThumb Error Background Color';
 $_lang['setting_phpthumb_error_bgcolor_desc'] = 'A hex value, without the #, indicating a background color for phpThumb error output.';
 $_lang['setting_phpthumb_error_fontsize'] = 'phpThumb Error Font Size';
 $_lang['setting_phpthumb_error_fontsize_desc'] = 'An em value indicating a font size to use for text appearing in phpThumb error output.';
-
 $_lang['setting_phpthumb_error_textcolor'] = 'phpThumb цвет текста ошибки';
 $_lang['setting_phpthumb_error_textcolor_desc'] = 'A hex value, without the #, indicating a font color for text appearing in phpThumb error output.';
-
-$_lang['setting_phpthumb_nohotlink_enabled'] = 'phpThumb Hotlinking Disabled';
-$_lang['setting_phpthumb_nohotlink_enabled_desc'] = 'Remote servers are allowed in the src parameter unless you disable hotlinking in phpThumb.';
-
-$_lang['setting_phpthumb_nohotlink_erase_image'] = 'phpThumb Hotlinking Erase Image';
-$_lang['setting_phpthumb_nohotlink_erase_image_desc'] = 'Indicates if an image generated from a remote server should be erased when not allowed.';
-
-$_lang['setting_phpthumb_nohotlink_text_message'] = 'phpThumb Hotlinking Not Allowed Message';
-$_lang['setting_phpthumb_nohotlink_text_message_desc'] = 'A message that is rendered instead of the thumbnail when a hotlinking attempt is rejected.';
-
-$_lang['setting_phpthumb_nohotlink_valid_domains'] = 'phpThumb Hotlinking Valid Domains';
-$_lang['setting_phpthumb_nohotlink_valid_domains_desc'] = 'A comma-delimited list of hostnames that are valid in src URLs.';
-
-$_lang['setting_phpthumb_nooffsitelink_enabled'] = 'phpThumb Offsite Linking Disabled';
-$_lang['setting_phpthumb_nooffsitelink_enabled_desc'] = 'Disables the ability for others to use phpThumb to render images on their own sites.';
-
-$_lang['setting_phpthumb_nooffsitelink_erase_image'] = 'phpThumb Offsite Linking Erase Image';
-$_lang['setting_phpthumb_nooffsitelink_erase_image_desc'] = 'Indicates if an image linked from a remote server should be erased when not allowed.';
-
-$_lang['setting_phpthumb_nooffsitelink_require_refer'] = 'phpThumb Offsite Linking Require Referrer';
-$_lang['setting_phpthumb_nooffsitelink_require_refer_desc'] = 'If enabled, any offsite linking attempts will be rejected without a valid referrer header.';
-
-$_lang['setting_phpthumb_nooffsitelink_text_message'] = 'phpThumb Offsite Linking Not Allowed Message';
-$_lang['setting_phpthumb_nooffsitelink_text_message_desc'] = 'A message that is rendered instead of the thumbnail when an offsite linking attempt is rejected.';
-
-$_lang['setting_phpthumb_nooffsitelink_valid_domains'] = 'phpThumb Offsite Linking Valid Domains';
-$_lang['setting_phpthumb_nooffsitelink_valid_domains_desc'] = 'A comma-delimited list of hostnames that are valid referrers for offsite linking.';
-
-$_lang['setting_phpthumb_nooffsitelink_watermark_src'] = 'phpThumb Offsite Linking Watermark Source';
-$_lang['setting_phpthumb_nooffsitelink_watermark_src_desc'] = 'Optional. A valid file system path to a file to use as a watermark source when your images are rendered offsite by phpThumb.';
-
-$_lang['setting_phpthumb_imagemagick_path'] = 'phpThumb путь к ImageMagick';
-$_lang['setting_phpthumb_imagemagick_path_desc'] = 'Optional. Set an alternative ImageMagick path here for generating thumbnails with phpThumb, if it is not in the PHP default.';
-$_lang['setting_phpthumb_zoomcrop'] = 'phpThumb Zoom-Crop';
-$_lang['setting_phpthumb_zoomcrop_desc'] = 'The default zc setting for phpThumb when used in MODx. Defaults to 0 to prevent zoom cropping.';
-
 $_lang['setting_phpthumb_far'] = 'phpThumb Force Aspect Ratio';
 $_lang['setting_phpthumb_far_desc'] = 'The default far setting for phpThumb when used in MODx. Defaults to C to force aspect ratio toward the center.';
-
+$_lang['setting_phpthumb_imagemagick_path'] = 'phpThumb путь к ImageMagick';
+$_lang['setting_phpthumb_imagemagick_path_desc'] = 'Optional. Set an alternative ImageMagick path here for generating thumbnails with phpThumb, if it is not in the PHP default.';
+$_lang['setting_phpthumb_nohotlink_enabled'] = 'phpThumb Hotlinking Disabled';
+$_lang['setting_phpthumb_nohotlink_enabled_desc'] = 'Remote servers are allowed in the src parameter unless you disable hotlinking in phpThumb.';
+$_lang['setting_phpthumb_nohotlink_erase_image'] = 'phpThumb Hotlinking Erase Image';
+$_lang['setting_phpthumb_nohotlink_erase_image_desc'] = 'Indicates if an image generated from a remote server should be erased when not allowed.';
+$_lang['setting_phpthumb_nohotlink_text_message'] = 'phpThumb Hotlinking Not Allowed Message';
+$_lang['setting_phpthumb_nohotlink_text_message_desc'] = 'A message that is rendered instead of the thumbnail when a hotlinking attempt is rejected.';
+$_lang['setting_phpthumb_nohotlink_valid_domains'] = 'phpThumb Hotlinking Valid Domains';
+$_lang['setting_phpthumb_nohotlink_valid_domains_desc'] = 'A comma-delimited list of hostnames that are valid in src URLs.';
+$_lang['setting_phpthumb_nooffsitelink_enabled'] = 'phpThumb Offsite Linking Disabled';
+$_lang['setting_phpthumb_nooffsitelink_enabled_desc'] = 'Disables the ability for others to use phpThumb to render images on their own sites.';
+$_lang['setting_phpthumb_nooffsitelink_erase_image'] = 'phpThumb Offsite Linking Erase Image';
+$_lang['setting_phpthumb_nooffsitelink_erase_image_desc'] = 'Indicates if an image linked from a remote server should be erased when not allowed.';
+$_lang['setting_phpthumb_nooffsitelink_require_refer'] = 'phpThumb Offsite Linking Require Referrer';
+$_lang['setting_phpthumb_nooffsitelink_require_refer_desc'] = 'If enabled, any offsite linking attempts will be rejected without a valid referrer header.';
+$_lang['setting_phpthumb_nooffsitelink_text_message'] = 'phpThumb Offsite Linking Not Allowed Message';
+$_lang['setting_phpthumb_nooffsitelink_text_message_desc'] = 'A message that is rendered instead of the thumbnail when an offsite linking attempt is rejected.';
+$_lang['setting_phpthumb_nooffsitelink_valid_domains'] = 'phpThumb Offsite Linking Valid Domains';
+$_lang['setting_phpthumb_nooffsitelink_valid_domains_desc'] = 'A comma-delimited list of hostnames that are valid referrers for offsite linking.';
+$_lang['setting_phpthumb_nooffsitelink_watermark_src'] = 'phpThumb Offsite Linking Watermark Source';
+$_lang['setting_phpthumb_nooffsitelink_watermark_src_desc'] = 'Optional. A valid file system path to a file to use as a watermark source when your images are rendered offsite by phpThumb.';
+$_lang['setting_phpthumb_zoomcrop'] = 'phpThumb Zoom-Crop';
+$_lang['setting_phpthumb_zoomcrop_desc'] = 'The default zc setting for phpThumb when used in MODx. Defaults to 0 to prevent zoom cropping.';
 $_lang['setting_publish_default'] = ' Публиковать по умолчанию';
 $_lang['setting_publish_default_desc'] = 'Выберите  «Да» если хотите, чтобы все новые ресурсы сразу становились опубликованными.';
 $_lang['setting_publish_default_err'] = 'Пожалуйста, укажите хотите ли вы чтобы новые ресурсы по умолчанию публиковались.';
@@ -385,22 +351,8 @@ $_lang['setting_settings_distro_desc'] = 'Версия установленно�
 $_lang['setting_set_header'] = 'Посылать HTTP заголовки';
 $_lang['setting_set_header_desc'] = 'Когда включено, MODx будет пытаться установить HTTP заголовки для ресурсов.';
 $_lang['setting_signupemail_message'] = 'Письмо регистрации';
-$_lang['setting_signupemail_message_desc'] = 'Здесь вы можете установить сообщение, отправляемое вашим пользователям после регистрации учётной записи, с данными об их имени учётной записи и пароле. <br />
-<strong>ВАЖНО:</strong> Следующие подстановщики заменяются MODx перед отправкой письма: <br /><br />
-[[+sname]] - название вашего сайта, <br />
-[[+saddr]] - адрес электронной почты вашего сайта, <br />
-[[+surl]] - url вашего сайта, <br />
-[[+uid]] - имя учётной записи пользователя (Login) или идентификатор, <br />
-[[+pwd]] - пароль пользователя, <br />
-[[+ufn]] - полное имя пользователя. <br /><br />
-<strong>Обязательно укажите тэги [[+uid]] и [[+pwd]] в письме, иначе ваши пользователи не смогут узнать свои имя учётной записи и пароль!</strong>';
-$_lang['setting_signupemail_message_default'] = 'Здравствуйте, [[+uid]] \n\n
-Ваши данные регистрации на сайте [[+sname]]:\n\n
-Имя пользоватля: [[+uid]]\n
-Пароль: [[+pwd]]\n\n
-Как только вы авторизуетесь на сайте  ([[+surl]]), вы сможете поменять свой пароль.\n\n
-С уважением,\n
-Администрация сайта';
+$_lang['setting_signupemail_message_desc'] = 'Здесь вы можете установить сообщение, отправляемое вашим пользователям после регистрации учётной записи, с данными об их имени учётной записи и пароле. <br /><strong>ВАЖНО:</strong> Следующие подстановщики заменяются MODx перед отправкой письма: <br /><br />[[+sname]] - название вашего сайта, <br />[[+saddr]] - адрес электронной почты вашего сайта, <br />[[+surl]] - url вашего сайта, <br />[[+uid]] - имя учётной записи пользователя (Login) или идентификатор, <br />[[+pwd]] - пароль пользователя, <br />[[+ufn]] - полное имя пользователя. <br /><br /><strong>Обязательно укажите тэги [[+uid]] и [[+pwd]] в письме, иначе ваши пользователи не смогут узнать свои имя учётной записи и пароль!</strong>';
+$_lang['setting_signupemail_message_default'] = 'Здравствуйте, [[+uid]] \n\nВаши данные регистрации на сайте [[+sname]]:\n\nИмя пользоватля: [[+uid]]\nПароль: [[+pwd]]\n\nКак только вы авторизуетесь на сайте  ([[+surl]]), вы сможете поменять свой пароль.\n\nС уважением,\nАдминистрация сайта';
 $_lang['setting_site_name'] = 'Название сайта:';
 $_lang['setting_site_name_desc'] = 'Введите название вашего сайта.';
 $_lang['setting_site_name_err'] = 'Пожалуйста, введите название сайта.';
@@ -449,47 +401,15 @@ $_lang['setting_use_editor_err'] = 'Пожалуйста, укажите, хот
 $_lang['setting_use_multibyte'] = 'Использовать библиотеку mbstring';
 $_lang['setting_use_multibyte_desc'] = 'Включите, если вы хотите использовать библиотеку mbstring для работы с многобайтовыми кодировками. Включайте только, если библиотека mbstring установлена на вашем сервере.';
 $_lang['setting_webpwdreminder_message'] = 'Напоминание пароля:';
-$_lang['setting_webpwdreminder_message_desc'] = ' Здесь вы можете создать сообщение, которое будет отсылаться пользователям, когда они запрашивают напоминание пароля. Письмо должно содержать логин и пароль.  <br />
-<strong>ПРИМЕЧАНИЕ:</strong> Следующие подстановщики отобразят соответствующие данные при отправлении письма: <br /><br />
-[[+sname]] - название сайта, <br />
-[[+saddr]] - e-mail адрес сайта, <br />
-[[+surl]] - URL сайта, <br />
-[[+uid]] - логин или id пользователя, <br />
-[[+pwd]] - пароль пользователя, <br />
-[[+ufn]] - полное имя пользователя.  
-<br />
-<br /><strong>
-Убедитесь, что в сообщении присутствуют поля [+uid+] и [+pwd+], иначе пользователь не узнает свои логин и пароль</strong>';
-$_lang['setting_webpwdreminder_message_default'] = 'Здравствуйте [[+uid]]\n\n 
-Для активации нового пароля перейдите по ссылке :\n\n
-[[+surl]]\n\n после успешного перехода по сылке Вы можете использовать следующий пароль для входа в систему:\n\n
-Пароль:[[+pwd]]\n\n
-Если Вы не запрашивали напоминание пароля, то проигнорируйте это письмо.\n\n
-С уважением,\n
- администратор сайта';
+$_lang['setting_webpwdreminder_message_desc'] = ' Здесь вы можете создать сообщение, которое будет отсылаться пользователям, когда они запрашивают напоминание пароля. Письмо должно содержать логин и пароль.  <br /><strong>ПРИМЕЧАНИЕ:</strong> Следующие подстановщики отобразят соответствующие данные при отправлении письма: <br /><br />[[+sname]] - название сайта, <br />[[+saddr]] - e-mail адрес сайта, <br />[[+surl]] - URL сайта, <br />[[+uid]] - логин или id пользователя, <br />[[+pwd]] - пароль пользователя, <br />[[+ufn]] - полное имя пользователя.  <br /><br /><strong>Убедитесь, что в сообщении присутствуют поля [+uid+] и [+pwd+], иначе пользователь не узнает свои логин и пароль</strong>';
+$_lang['setting_webpwdreminder_message_default'] = 'Здравствуйте [[+uid]]\n\n Для активации нового пароля перейдите по ссылке :\n\n[[+surl]]\n\n после успешного перехода по сылке Вы можете использовать следующий пароль для входа в систему:\n\nПароль:[[+pwd]]\n\nЕсли Вы не запрашивали напоминание пароля, то проигнорируйте это письмо.\n\nС уважением,\n администратор сайта';
 $_lang['setting_websignupemail_message'] = 'Регистрация веб-пользователя:';
-$_lang['setting_websignupemail_message_desc'] = 'Здесь вы можете создать сообщение, которое будет отсылаться веб-пользователям, когда создается учетная запись нового веб-пользователя. Письмо должно содержать логин и пароль. <br />
-<strong>ПРИМЕЧАНИЕ:</strong> Следующие подстановщики отобразят соответствующие данные при отправлении письма: <br /><br />
-[[+sname]] - название сайта,  <br />
-[[+saddr]] - e-mail адрес сайта, <br />
-[[+surl]] - URL сайта, <br />
-[[+uid]] - логин или id пользователя, <br />
-[[+pwd]] - пароль пользователя,  <br />
-[[+ufn]] - полное имя пользователя.  <br /><br />
-<strong>Убедитесь, что в сообщении присутствуют поля [+uid+] и [+pwd+], иначе пользователь не узнает свои логин и пароль!</strong>';
-$_lang['setting_websignupemail_message_default'] = 'Здравствуйте [[+uid]] \n\n
-Это Ваши данные для входа на [[+sname]]:\n\n
-Ваш логин: [[+uid]]\n
-Ваш пароль: [[+pwd]]\n\n
-Сразу же после входа на [[+sname]] ([[+surl]]), Вы сможете изменить Ваш пароль.\n\n
-С уважением,\n
-Администратор сайта';
+$_lang['setting_websignupemail_message_desc'] = 'Здесь вы можете создать сообщение, которое будет отсылаться веб-пользователям, когда создается учетная запись нового веб-пользователя. Письмо должно содержать логин и пароль. <br /><strong>ПРИМЕЧАНИЕ:</strong> Следующие подстановщики отобразят соответствующие данные при отправлении письма: <br /><br />[[+sname]] - название сайта,  <br />[[+saddr]] - e-mail адрес сайта, <br />[[+surl]] - URL сайта, <br />[[+uid]] - логин или id пользователя, <br />[[+pwd]] - пароль пользователя,  <br />[[+ufn]] - полное имя пользователя.  <br /><br /><strong>Убедитесь, что в сообщении присутствуют поля [+uid+] и [+pwd+], иначе пользователь не узнает свои логин и пароль!</strong>';
+$_lang['setting_websignupemail_message_default'] = 'Здравствуйте [[+uid]] \n\nЭто Ваши данные для входа на [[+sname]]:\n\nВаш логин: [[+uid]]\nВаш пароль: [[+pwd]]\n\nСразу же после входа на [[+sname]] ([[+surl]]), Вы сможете изменить Ваш пароль.\n\nС уважением,\nАдминистратор сайта';
 $_lang['setting_welcome_screen'] = 'Показывать экран приветствия';
 $_lang['setting_welcome_screen_desc'] = 'If set to true, the welcome screen will show on the next successful loading of the welcome page, and then not show after that.';
-
 $_lang['setting_welcome_screen_url'] = 'URL экрана приветствия';
 $_lang['setting_welcome_screen_url_desc'] = 'The URL for the welcome screen that loads on first load of MODx Revolution.';
-
 $_lang['setting_which_editor'] = 'Редактор:';
 $_lang['setting_which_editor_desc'] = 'Здесь вы можете выбрать, какой редактор использовать. Вы можете скачать и установить дополнительные редакторы со страницы загрузок MODx';
 $_lang['setting_which_element_editor'] = 'Редактор для элементов';

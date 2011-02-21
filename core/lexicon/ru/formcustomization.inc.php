@@ -1,11 +1,4 @@
 <?php
-/**
-* Form Customization Russian lexicon topic
-*
-* @language ru
-* @package modx
-* @subpackage lexicon
-*/
 $_lang['action'] = 'Действие';
 $_lang['action_desc'] = 'Действие, к которому будет применяться это правило';
 $_lang['activate'] = 'Включить';

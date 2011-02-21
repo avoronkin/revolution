@@ -1,11 +1,4 @@
 <?php
-/**
- * Access Russian lexicon topic
- *
- * @language ru
- * @package modx
- * @subpackage lexicon
- */
 $_lang['access_category_management_msg'] = 'Управлять доступом членов группы пользователей к элементам с помощью категорий элементов и добавлять политики доступа.';
 $_lang['access_category_err_ae'] = 'Списки контроля доступа для этой категории уже существуют!';
 $_lang['access_category_err_nf'] = 'Списки контроля доступа для этой категории не найдены.';
